@@ -21,6 +21,7 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 # install R packages
 RUN Rscript -e "install.packages(c('httr', 'logger', 'glue', 'jsonslite', 'randomForest'), repos = 'https://cloud.r-project.org/')"
 
+# Copy R runtime and inference code
 COPY runtime.R predict.R ${LAMBDA_TASK_ROOT}/
 RUN chmod 755 -R ${LAMBDA_TASK_ROOT}/
 

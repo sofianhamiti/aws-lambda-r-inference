@@ -1,4 +1,5 @@
-aws-cdk.core==1.83.0
-aws-cdk.aws-lambda==1.83.0
-aws-cdk.aws_ecr==1.83.0
-aws-cdk.aws_iam==1.83.0
+aws-cdk.core==1.85.0
+aws-cdk.aws-lambda==1.85.0
+aws-cdk.aws_ecr==1.85.0
+aws-cdk.aws_iam==1.85.0
+aws-cdk.aws_apigatewayv2==1.85.0
